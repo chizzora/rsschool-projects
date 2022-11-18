@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <div class="ancient-container">
+            <div class="ancient" style="background-image: url(assets/Ancients/Azathoth.png);"></div>
+            <div class="ancient" style="background-image: url(assets/Ancients/Cthulthu.png);"></div>
+            <div class="ancient" style="background-image: url(assets/Ancients/IogSothoth.png);"></div>
+            <div class="ancient" style="background-image: url(assets/Ancients/ShubNiggurath.png);"></div>
+        </div>
+        <div class="difficulty-container">
+            <div class="choose-difficulty">Выберите уровень сложности</div>
+            <div class="difficulty-item very-easy">Очень легкий</div>
+            <div class="difficulty-item easy">Легкий</div>
+            <div class="difficulty-item normal">Средний</div>
+            <div class="difficulty-item hard">Высокий</div>
+            <div class="difficulty-item very-hard">Очень высокий</div>
+        </div>
+        <div class="deck-container hidden">
+            <div class="mix-up-button disable">Замешать колоду</div>
+            <div class="error-message"></div>
+            <div class="difficulty-message"></div>
+            <div class="deck-tracker hidden">
+                <div class="stage-container">
+                    <span class="stage-text">Этап I</span>
+                    <div class="cards-tracker">
+                        <div class="play-cards first-green green"></div>
+                        <div class="play-cards first-yellow yellow"></div>
+                        <div class="play-cards first-blue blue"></div>
+                    </div>
+                </div>
+                <div class="stage-container">
+                    <span class="stage-text">Этап II</span>
+                    <div class="cards-tracker">
+                        <div class="play-cards second-green green"></div>
+                        <div class="play-cards second-yellow yellow"></div>
+                        <div class="play-cards second-blue blue"></div>
+                    </div>
+                </div>
+                <div class="stage-container">
+                    <span class="stage-text">Этап III</span>
+                    <div class="cards-tracker">
+                        <div class="play-cards third-green green"></div>
+                        <div class="play-cards third-yellow yellow"></div>
+                        <div class="play-cards third-blue blue"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card__sides hidden">
+                <div class="card__main-side hidden"></div>
+                <div class="card__back-side"></div>
+            </div>
+            <div class="restart-button">
+                <button class="retry">Начать заново</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
