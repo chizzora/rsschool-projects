@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <div class="advanced-player">
+        <div class="song-name">
+          <br>
+        </div>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <div class="play-time">
+          <div class="current-time"></div>
+          <div class="duration-time"></div>
+        </div>
+        <div class="sound-bar">
+          <div class="sound-icon"></div>
+          <div class="sound-bar__container">
+            <div class="sound-bar__container-progress"></div>
+          </div>
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="settings"></div>
+    <div class="quotes">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="git-and-rs-links">
+      <a href="https://github.com/chizzora">
+        <img src="/chizzora-JSFEPRESCHOOL2022Q2/momentum/assets/svg/github.svg" alt="GitHub Logotype" class="footer-icon-link">
+      </a>
+      <a href="https://rs.school/js-stage0/">
+          <img src="/chizzora-JSFEPRESCHOOL2022Q2/momentum/assets/svg/rs_school.svg" alt="RS Logotype" class="footer-icon-link">
+      </a>
+    </div>
+  </footer>
+    <div class="settings__container">
+    <div class="settings__container-item">
+      <label class="setLang" for="set-language"></label>
+      <button class="langBtn"></button>
+    </div>
+    <div class="settings__container-item">
+      <span class="setTime"></span>
+      <span class="checkbox__container">
+        <input class="checkbox-group" type="checkbox" id="set-time" name="time">
+        <label class="checkbox" for="set-time"></label>
+      </span>
+    </div>
+    <div class="settings__container-item">
+      <span class="setDate"></span>
+      <span class="checkbox__container">
+        <label class="checkbox" for="set-date"></label>
+        <input class="checkbox-group" type="checkbox" id="set-date" name="date">
+      </span>
+    </div>
+    <div class="settings__container-item">
+      <span class="setGreeting"></span>
+      <span class="checkbox__container">
+        <label class="checkbox" for="set-greeting"></label>
+        <input class="checkbox-group" type="checkbox" id="set-greeting" name="greeting-container">
+      </span>
+    </div>
+    <div class="settings__container-item">
+      <span class="setWeather"></span>
+      <span class="checkbox__container">
+        <label class="checkbox" for="set-weather"></label>
+        <input class="checkbox-group" type="checkbox" id="set-weather" name="weather">
+      </span>
+    </div>
+    <div class="settings__container-item">
+      <span class="setQuotes"></span>
+      <span class="checkbox__container">
+        <label class="checkbox" for="set-quotes"></label>
+        <input class="checkbox-group" type="checkbox" id="set-quotes" name="quotes">
+      </span>
+    </div>
+    <span class="settings__container-item">
+      <span class="setAudioplayer"></span>
+      <div class="checkbox__container">
+        <label class="checkbox" for="set-audioplayer"></label>
+        <input class="checkbox-group" type="checkbox" id="set-audioplayer" name="player">
+      </div>
+    </span>
+  </div>
+  <div class="settings__bg-wrapper"></div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
